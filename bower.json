@@ -1,0 +1,27 @@
+{
+  "name": "sino",
+  "version": "0.0.1",
+  "homepage": "https://github.com/stelboe/SimpleNotification",
+  "authors": [
+    "stelboe <stelboe@gmail.com>"
+  ],
+  "description": "create simple notifications",
+  "main": [
+    "javascript/sino.js",
+    "sass/sino.scss"
+  ],
+  "keywords": [
+    "simple",
+    "notifications"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    ".sass-cache",
+    "bower_components",
+    ".gitignore"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,4 +1,4 @@
-/* line 17, ../sass/notify.scss */
+/* line 17, ../sass/sino.scss */
 html, body {
   height: 2000px;
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
@@ -7,12 +7,12 @@ html, body {
 
 /*PRINT*/
 @media print {
-  /* line 25, ../sass/notify.scss */
+  /* line 25, ../sass/sino.scss */
   .notification {
     display: none;
   }
 }
-/* line 30, ../sass/notify.scss */
+/* line 30, ../sass/sino.scss */
 .sino {
   position: fixed;
   bottom: 10px;
@@ -37,51 +37,42 @@ html, body {
   transition: opacity 0.1s;
   display: none;
 }
-/* line 48, ../sass/notify.scss */
+/* line 48, ../sass/sino.scss */
 .sino .content {
   float: left;
   letter-spacing: 0.1px;
   max-width: 95%;
   padding-right: 15px;
 }
-/* line 54, ../sass/notify.scss */
+/* line 54, ../sass/sino.scss */
 .sino .control {
   float: right;
   cursor: pointer;
 }
 
-/* line 59, ../sass/notify.scss */
+/* line 59, ../sass/sino.scss */
 .sino:hover, .sino:active {
   opacity: 0.9;
   transition: 0.1s;
 }
 
-/* line 63, ../sass/notify.scss */
+/* line 63, ../sass/sino.scss */
 .sino.success {
   background-color: limegreen;
 }
 
-/* line 66, ../sass/notify.scss */
+/* line 66, ../sass/sino.scss */
 .sino.warning {
   background-color: darkorange;
 }
 
-/* line 69, ../sass/notify.scss */
+/* line 69, ../sass/sino.scss */
 .sino.error {
   background-color: indianred;
 }
 
-/*
-.sino.timed,.sino.error.timed,.sino.warning.timed,.sino.success.timed {
-  .content{
-   // text-align: center;
-    //margin: 0 auto;
-    width: 90%;
-    padding-right: 0px;
-  }
-}*/
 @media screen and (min-width: 600px) {
-  /* line 83, ../sass/notify.scss */
+  /* line 74, ../sass/sino.scss */
   .sino {
     bottom: 30px;
     right: 30px;
@@ -93,12 +84,12 @@ html, body {
     font-size: 18px;
   }
 
-  /* line 93, ../sass/notify.scss */
+  /* line 84, ../sass/sino.scss */
   .content {
     padding-right: 0px;
   }
 
-  /* line 96, ../sass/notify.scss */
+  /* line 87, ../sass/sino.scss */
   .control {
     padding-right: 10px;
     padding-left: 20px;
