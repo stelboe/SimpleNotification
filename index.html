@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>crypt.drive.notify</title>
+    <link rel="stylesheet" href="stylesheets/notify.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="javascript/notify.js"></script>
+</head>
+<body>
+<h1>SINO</h1>
+
+<h2>SimpleNotification</h2>
+
+<h3>default</h3>
+<button onclick="sino('12 File successfully uploaded');">default default</button>
+<button onclick="sino('12 File successfully uploaded', 'success');">default success</button>
+<button onclick="sino('12 File successfully uploaded', 'warning');">default warning</button>
+<button onclick="sino('12 File successfully uploaded', 'error');">default error</button>
+<h3>timed</h3>
+<button onclick="sino('12 File successfully uploaded', 'timed', 5000);">timed default</button>
+<button onclick="sino('12 File successfully uploaded', 'timed success', 5000);">timed success</button>
+<button onclick="sino('12 File successfully uploaded', 'timed warning', 5000);">timed warning</button>
+<button onclick="sino('12 File successfully uploaded', 'timed error', 5000);">timed error</button>
+<p>developed by stelboe for crypt.space</p>
+</body>
+</html>

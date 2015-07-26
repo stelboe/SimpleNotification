@@ -1,0 +1,106 @@
+/* line 17, ../sass/notify.scss */
+html, body {
+  height: 2000px;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  background-color: whitesmoke;
+}
+
+/*PRINT*/
+@media print {
+  /* line 25, ../sass/notify.scss */
+  .notification {
+    display: none;
+  }
+}
+/* line 30, ../sass/notify.scss */
+.sino {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  max-width: 600px;
+  max-height: 60px;
+  line-height: 60px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.62);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.62);
+  box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.62);
+  cursor: default;
+  background-color: slategrey;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+  color: whitesmoke;
+  font-size: 17px;
+  transition: opacity 0.1s;
+  display: none;
+}
+/* line 48, ../sass/notify.scss */
+.sino .content {
+  float: left;
+  letter-spacing: 0.1px;
+  max-width: 95%;
+  padding-right: 15px;
+}
+/* line 54, ../sass/notify.scss */
+.sino .control {
+  float: right;
+  cursor: pointer;
+}
+
+/* line 59, ../sass/notify.scss */
+.sino:hover, .sino:active {
+  opacity: 0.9;
+  transition: 0.1s;
+}
+
+/* line 63, ../sass/notify.scss */
+.sino.success {
+  background-color: limegreen;
+}
+
+/* line 66, ../sass/notify.scss */
+.sino.warning {
+  background-color: darkorange;
+}
+
+/* line 69, ../sass/notify.scss */
+.sino.error {
+  background-color: indianred;
+}
+
+/*
+.sino.timed,.sino.error.timed,.sino.warning.timed,.sino.success.timed {
+  .content{
+   // text-align: center;
+    //margin: 0 auto;
+    width: 90%;
+    padding-right: 0px;
+  }
+}*/
+@media screen and (min-width: 600px) {
+  /* line 83, ../sass/notify.scss */
+  .sino {
+    bottom: 30px;
+    right: 30px;
+    min-width: 150px;
+    max-width: 90%;
+    max-height: 70px;
+    line-height: 70px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+
+  /* line 93, ../sass/notify.scss */
+  .content {
+    padding-right: 0px;
+  }
+
+  /* line 96, ../sass/notify.scss */
+  .control {
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+}
