@@ -13,11 +13,24 @@ $error-color : indianred;
   -ms-user-select: $var1;
   user-select: $var1;
 }
+@mixin  border-radius($topleft, $topright, $bottomright, $bottomleft){
+  -webkit-border-top-left-radius: $topleft;
+  -webkit-border-top-right-radius: $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -moz-border-radius-topleft: $topleft;
+  -moz-border-radius-topright: $topright;
+  -moz-border-radius-bottomright: $bottomright;
+  -moz-border-radius-bottomleft: $bottomleft;
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+}
 
 html, body{
   height:2000px;
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
-  background-color: whitesmoke;
 }
 
 /*PRINT*/
@@ -69,7 +82,86 @@ html, body{
 .sino.error{
   background-color: $error-color;
 }
-
+.sinoext.error{
+  .header{
+    background-color: $error-color;
+  }
+}
+.sinoext.warning{
+  .header{
+    background-color: $warning-color;
+  }
+}
+.sinoext.success{
+  .header{
+    background-color: $success-color;
+  }
+}
+.sinoext{
+  position: fixed;
+  bottom:30px;
+  background-color: whitesmoke;
+  margin-left:10px;
+  margin-right: 20px;
+  max-height:600px;
+  display: none;
+  @include user-select(none);
+  @include  box-shadow(2px, 2px, 3px, 0px, rgba(50, 50, 50, 0.62));
+  .header{
+    background-color: $default-color;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+    @include border-radius(5px ,5px ,0px,0px);
+    .header_text{
+      float: left;
+    }
+  }
+  .content{
+    font-size: 18px;
+    padding: 10px 15px 30px 15px;
+    margin-bottom: -20px;
+    text-align: justify;
+    overflow: hidden;
+  }
+  .footer{
+    color: black;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border-top: 1px solid $default-color;
+    .left{
+      float: left;
+      width: 50%;
+      box-shadow: 1px 0px 0 #000;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .left:hover, .left:active{
+      background-color: lightgrey;
+      opacity: 0.9;
+      box-shadow: 1px 0px 0 #000;
+      transition: 0.2s;
+    }
+    .right{
+      float: right;
+      width: 50%;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .right:hover, .right:active{
+      background-color: lightgrey;
+      opacity: 0.9;
+      box-shadow: -1px 0px 0 #000;
+      transition: 0.2s;
+    }
+  }
+}
 @media screen and (min-width: 600px){
   .sino{
     bottom: 30px;
@@ -87,6 +179,19 @@ html, body{
   .control{
     padding-right: 10px;
     padding-left: 20px;
+  }
+  .sinoext{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 400px;
+    cursor: default;
+    background-color: whitesmoke;
+    margin: 0px;
+    margin-left: 30px;
+    color:black;
+    font-size: 17px;
+    transition: opacity 0.1s;
   }
 }
 
