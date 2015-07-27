@@ -1,4 +1,5 @@
 var timer = 0;
+var to = null;
 function sino(content, attr, time) {
     (time == null) ? timer = 5000 : timer = time;
     if ($('.sino, .sinoext').is(":visible")) {
@@ -9,10 +10,11 @@ function sino(content, attr, time) {
         $('.sino').slideToggle();
     }
         $('.control').click(function () {
+            clearTimeout(to);
             $(".sino").fadeOut("slow");
         });
         if ($('.sino').hasClass("timed")) {
-            setTimeout(function () {
+          var to = setTimeout(function () {
                 $('.sino').fadeOut('slow');
             }, time);
         }

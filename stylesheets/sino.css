@@ -35,57 +35,58 @@ html, body {
   font-size: 17px;
   transition: opacity 0.1s;
   display: none;
+  transition: 0.5s;
 }
-/* line 61, ../sass/sino.scss */
+/* line 62, ../sass/sino.scss */
 .sino .content {
   float: left;
   letter-spacing: 0.1px;
   max-width: 95%;
   padding-right: 15px;
 }
-/* line 67, ../sass/sino.scss */
+/* line 68, ../sass/sino.scss */
 .sino .control {
   float: right;
   cursor: pointer;
 }
 
-/* line 72, ../sass/sino.scss */
+/* line 73, ../sass/sino.scss */
 .sino:hover, .sino:active {
   opacity: 0.9;
   transition: 0.1s;
 }
 
-/* line 76, ../sass/sino.scss */
+/* line 77, ../sass/sino.scss */
 .sino.success {
   background-color: limegreen;
 }
 
-/* line 79, ../sass/sino.scss */
+/* line 80, ../sass/sino.scss */
 .sino.warning {
   background-color: darkorange;
 }
 
-/* line 82, ../sass/sino.scss */
+/* line 83, ../sass/sino.scss */
 .sino.error {
   background-color: indianred;
 }
 
-/* line 86, ../sass/sino.scss */
+/* line 87, ../sass/sino.scss */
 .sinoext.error .header {
   background-color: indianred;
 }
 
-/* line 91, ../sass/sino.scss */
+/* line 92, ../sass/sino.scss */
 .sinoext.warning .header {
   background-color: darkorange;
 }
 
-/* line 96, ../sass/sino.scss */
+/* line 97, ../sass/sino.scss */
 .sinoext.success .header {
   background-color: limegreen;
 }
 
-/* line 100, ../sass/sino.scss */
+/* line 101, ../sass/sino.scss */
 .sinoext {
   position: fixed;
   bottom: 30px;
@@ -94,6 +95,7 @@ html, body {
   margin-right: 20px;
   max-height: 600px;
   display: none;
+  transition: 0.5s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -102,7 +104,7 @@ html, body {
   -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.62);
   box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.62);
 }
-/* line 110, ../sass/sino.scss */
+/* line 112, ../sass/sino.scss */
 .sinoext .header {
   background-color: slategrey;
   height: 45px;
@@ -125,11 +127,11 @@ html, body {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-/* line 120, ../sass/sino.scss */
+/* line 122, ../sass/sino.scss */
 .sinoext .header .header_text {
   float: left;
 }
-/* line 124, ../sass/sino.scss */
+/* line 126, ../sass/sino.scss */
 .sinoext .content {
   font-size: 18px;
   padding: 10px 15px 30px 15px;
@@ -137,7 +139,7 @@ html, body {
   text-align: justify;
   overflow: hidden;
 }
-/* line 131, ../sass/sino.scss */
+/* line 133, ../sass/sino.scss */
 .sinoext .footer {
   color: black;
   height: 45px;
@@ -146,7 +148,7 @@ html, body {
   font-size: 18px;
   border-top: 1px solid slategrey;
 }
-/* line 138, ../sass/sino.scss */
+/* line 140, ../sass/sino.scss */
 .sinoext .footer .left {
   float: left;
   width: 50%;
@@ -154,21 +156,21 @@ html, body {
   transition: 0.2s;
   cursor: pointer;
 }
-/* line 145, ../sass/sino.scss */
+/* line 147, ../sass/sino.scss */
 .sinoext .footer .left:hover, .sinoext .footer .left:active {
   background-color: lightgrey;
   opacity: 0.9;
   box-shadow: 1px 0px 0 #000;
   transition: 0.2s;
 }
-/* line 151, ../sass/sino.scss */
+/* line 153, ../sass/sino.scss */
 .sinoext .footer .right {
   float: right;
   width: 50%;
   transition: 0.2s;
   cursor: pointer;
 }
-/* line 157, ../sass/sino.scss */
+/* line 159, ../sass/sino.scss */
 .sinoext .footer .right:hover, .sinoext .footer .right:active {
   background-color: lightgrey;
   opacity: 0.9;
@@ -177,7 +179,7 @@ html, body {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 166, ../sass/sino.scss */
+  /* line 168, ../sass/sino.scss */
   .sino {
     bottom: 30px;
     right: 30px;
@@ -189,18 +191,18 @@ html, body {
     font-size: 18px;
   }
 
-  /* line 176, ../sass/sino.scss */
+  /* line 178, ../sass/sino.scss */
   .content {
     padding-right: 0px;
   }
 
-  /* line 179, ../sass/sino.scss */
+  /* line 181, ../sass/sino.scss */
   .control {
     padding-right: 10px;
     padding-left: 20px;
   }
 
-  /* line 183, ../sass/sino.scss */
+  /* line 185, ../sass/sino.scss */
   .sinoext {
     position: fixed;
     right: 30px;
